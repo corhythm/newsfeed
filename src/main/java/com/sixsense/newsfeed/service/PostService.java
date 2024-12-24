@@ -91,7 +91,7 @@ public class PostService {
             throw new AccessDeniedException(ErrorCode.POST_ACCESS_DENIED);
         }
 
-        post.deactive();
+        post.setIsDeleted(true);
 
         postRepository.save(post);
     }

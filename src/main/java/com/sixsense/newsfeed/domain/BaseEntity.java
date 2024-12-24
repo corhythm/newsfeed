@@ -24,8 +24,4 @@ public abstract class BaseEntity {
     @Column(name = "updated_at", nullable = false)
     protected LocalDateTime updatedAt;
 
-    @Column(name = "status", nullable = false)
-    @Enumerated(EnumType.STRING)
-    protected Status status;
-
 }
